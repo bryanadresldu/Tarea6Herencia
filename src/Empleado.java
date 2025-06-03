@@ -32,10 +32,7 @@ public class Empleado extends Persona{
         return this.usuario.equals(usuario) && this.clave.equals(clave);
     }
 
-    public  void crearCuentaParaCliente(Cliente cliente, String tipo){
-        cliente.registrarCuenta(tipo);
-        System.out.println("Cuenta creada exitosamente por el empleado.");
-    }
+
     public  void modificarDatosCliente(Cliente cliente){
         Scanner leer = new Scanner(System.in);
         System.out.print("Nueva dirección: ");
